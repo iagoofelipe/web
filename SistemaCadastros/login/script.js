@@ -13,3 +13,12 @@ function loginSubmit(){
         }
     })
 }
+
+$(function(){
+    var passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("keypress", function(event){
+        if(event.key == "Enter") {
+            $("#btn-login").click();
+        }
+    })
+})

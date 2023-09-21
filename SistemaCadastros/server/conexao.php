@@ -2,7 +2,6 @@
 include("_Database.php");
 include("_Usuario.php");
 
-$db = new Database();
 $usuario = new Usuario($db);
 
 if(!isset($_SESSION)){
@@ -11,6 +10,7 @@ if(!isset($_SESSION)){
 
 if($usuario->verificarUsuario($_POST["user"], $_POST["password"])){
     $_SESSION['user_connected'] = "true";
+    $_SESSION['db'] = $db;
     echo "true";
 
 } else {

@@ -23,7 +23,7 @@ $_SESSION["user_connected"] = "false";
             <div id="form">
                 <input class="textfield" type="text" id="user" placeholder="USUÁRIO">
                 <input class="textfield" type="password" id="password" placeholder="SENHA">
-                <button type="button" onclick="loginSubmit()">LOGIN</button>
+                <button type="button" onclick="loginSubmit()" id="btn-login">LOGIN</button>
             </div>
         </div>    
     </div>

@@ -2,7 +2,7 @@
 include("_Database.php");
 include("_Usuario.php");
 
-$db = new Database("requests.mysql.uhserver.com", "unit_user", "unit@12", "requests");
+$db = new Database();
 $usuario = new Usuario($db);
 
 if(!isset($_SESSION)){

@@ -23,17 +23,18 @@ body * {
 }
 
 .sidebar {
-    width: 10vw;
+    width: 100px;
     background-color: rgb(51,61,78);
     height: 100vh;
     transition: all 500ms;
     font-family: 'Work Sans', sans-serif;
     color: rgb(160, 171, 191);
     font-size: 13px;
+    overflow: hidden;
 }
 
 .sidebar.hide {
-    width: 5vw;
+    width: 0;
 }
 
 .sidebar > i {
@@ -47,6 +48,7 @@ body * {
     padding: 20px;
     border-bottom: 2px groove rgb(37, 44, 56);
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .sidebar > .user {
@@ -66,10 +68,15 @@ body * {
 
 .sidebar > section > label {
     margin: 5px 0;
+    cursor: pointer;
 }
 
 .container-center {
-    width: 90vw;
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 80vw;
+    height: 1200px;
+    background-color: antiquewhite;
 }
 
 .section-name {
@@ -90,7 +97,7 @@ body * {
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 5%;
+    width: 60px;
 }
 
 .div-search {
@@ -121,7 +128,7 @@ body * {
 
 
 @media screen {
-    @media(max-width: 450px){
+    /* @media(max-width: 450px){
         .sidebar, #user-image, .sidebar > section > p {
             display: none;
         }
@@ -131,7 +138,7 @@ body * {
     }
     @media(max-width: 900px){
         #user-image {
-            /* width: 80%; */
+             width: 80%; 
             display: none;
         }
     }
@@ -141,11 +148,6 @@ body * {
         }
         .sidebar > section {
             align-items: center;
-        }
-    }
-    /* @media (min-width: 768px) and (max-width: 1023px){
-        .sidebar > section > label {
-            text-transform: none;
         }
     } */
 }

@@ -1,7 +1,8 @@
 export default class Pedidos {
+    length = 0;
+
     constructor(values){
         this.values = JSON.parse(values);
-        this.length = 0;
     
     } setTabPedidos(){
         // utilizado para inserir os valores na tela, id tab-pedidos-body
@@ -19,10 +20,7 @@ export default class Pedidos {
             count++;
         });
 
-        console.log(count);
         this.length = count + 1;
-        
-        this.tabela.innerHTML = "<p>oi</p>";
-        // this.tabela.innerHTML = conteudo;
+        this.tabela.innerHTML = conteudo;
     }
 }

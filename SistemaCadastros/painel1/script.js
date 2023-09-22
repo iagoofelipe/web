@@ -1,29 +1,21 @@
 import Pedidos from "../util/Pedidos.js";
 
 export function callSideBar(){
-    var sidebar = $("#sidebar");
+    var sidebar = $("#sidebar");    
     sidebar.toggleClass("hide");
 
-    if(sessionStorage["sidebar_opened"] == "true"){
+    if(sessionStorage["sidebar_opened"] == "opened"){
         $("#user-image,.sidebar > section > p, .sidebar .text-icon").css({"display":"none"});
         $(".container-center").css({"width":"95vw"});
         $(".sidebar > section").css({"align-items": "center"});
-        sessionStorage["sidebar_opened"] = "false";
+        sessionStorage["sidebar_opened"] = "closed";
     } else {
         $("#user-image,.sidebar > section > p, .sidebar .text-icon").css({"display":"flex"});
-        sessionStorage["sidebar_opened"] = "true";
-        $(".sidebar > section").css({"align-items": "center"});
+        $(".sidebar .text-icon").css({"display":"contents"});
+        $(".sidebar > section").css({"align-items": "flex-start"});
+        $(".user").css({"align-items": "center"});
+        sessionStorage["sidebar_opened"] = "opened";
     }
-
-
-
-    // if(sidebar.css("display") == "none"){
-    //     sidebar.css("display", "block");
-    //     $(".container-center").css("width", "90vw");
-    // } else {
-    //     sidebar.css("display", "none");
-    //     $(".container-center").css("width", "100vw");
-    // }
 }
 
 export function getPedidos(){

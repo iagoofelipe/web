@@ -17,6 +17,6 @@ Class Database extends mysqli
     }
 }
 
-$db = new Database("requests.mysql.uhserver.com", "unit_user", "unit@12", "requests");
+$db = new Database();
 
 ?>

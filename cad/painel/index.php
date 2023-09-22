@@ -22,8 +22,7 @@ include("../server/checkConnection.php");
         import {getPedidos, setAllCheckboxs} from "./js/script.js";
         
         $(function(){
-            console.log("definindo valores do banco");
-            getPedidos();
+            console.log(getPedidos());
             $(".sidebar");
             
             setAllCheckboxs();

@@ -26,7 +26,7 @@ include("../server/checkConnection.php");
             getPedidos();
             $(".sidebar")
         })
-
+        sessionStorage["sidebar_opened"] = true;
         $("#menu-icon").click(callSideBar);
 
     </script>
@@ -46,7 +46,7 @@ include("../server/checkConnection.php");
         <section>
             <p>opções</p>
             <label id="config" for="config"><i class="fa-solid fa-gear"></i><span class="text-icon"> definições</span></label>
-            <label id="sair" for="sair" onclick="logout()"><i class="fa-solid fa-house" style="color: #a0abbf;"></i><span class="text-icon"> sair</span></label>
+            <label id="sair" for="sair" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i></i><span class="text-icon"> sair</span></label>
         </section>
     </div>
     <main class="container-center">
@@ -60,6 +60,7 @@ include("../server/checkConnection.php");
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </header>
+        <h1 class="section-name">Pedidos</h1>
         <table id="tab-pedidos">
             <thead>
                 <tr>

@@ -26,10 +26,14 @@ body * {
     width: 10vw;
     background-color: rgb(51,61,78);
     height: 100vh;
-    transition-duration: 500ms;
+    transition: all 500ms;
     font-family: 'Work Sans', sans-serif;
     color: rgb(160, 171, 191);
     font-size: 13px;
+}
+
+.sidebar.hide {
+    width: 5vw;
 }
 
 .sidebar > i {
@@ -68,8 +72,10 @@ body * {
     width: 90vw;
 }
 
-/* #main-header {
-} */
+.section-name {
+    margin-left: 10px;
+    color: #333D4E;
+}
 
 #main-header {
     padding: 10px;
@@ -84,7 +90,7 @@ body * {
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 15%;
+    width: 5%;
 }
 
 .div-search {

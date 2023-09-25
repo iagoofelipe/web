@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vw;
+    background-image: url("../img/sebastian-svenson-LpbyDENbQQg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container-center {
+    width: 80%;
+    height: 90%;
+    margin: 50px auto;
+    background-color: rgb(226, 228, 230);
+    transition-duration: 0.2s;
+    box-shadow: 5px 5px 20px #00000049;
+    border-radius: 30px;
+    display: flex;
+}
+
+.container-center:hover {
+    box-shadow: 10px 10px 20px #00000049;
+
+}
+
+.container-center > section {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.section-title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-bottom: 1px solid #808080;
+}
+
+#tab-pedidos {
+    width: 90%; 
+    text-align: center;
+    margin: 20px auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 100px #00000049;
+    transition-duration: 0.2s;
+}
+
+#tab-pedidos:hover {
+    box-shadow: 10px 10px 20px #00000049;
+}
+
+#tab-pedidos > thead {
+    font-weight: bold;
+}
+
+#tab-pedidos > thead > tr > td {
+    border-bottom: 1px solid #808080;
+}
+
+#tab-pedidos > tbody > tr {
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#tab-pedidos > tbody > tr:hover {
+    background-color: #0000001e;
+}
